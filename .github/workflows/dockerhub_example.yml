@@ -23,6 +23,14 @@ jobs:
         id: pwd
         run: pwd
 
+      - name: List working directory
+        id: ll
+        run: ll
+
+      - name: List parent working directory
+        id: ll2
+        run: ll ..
+
       - name: Build and push
         id: docker_build
         uses: docker/build-push-action@v2
