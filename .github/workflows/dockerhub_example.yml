@@ -22,17 +22,17 @@ jobs:
         id: buildx
         uses: docker/setup-buildx-action@v1
 
-      - name: Print working directory
-        id: pwd
-        run: pwd
+      # - name: Print working directory
+      #   id: pwd
+      #   run: pwd
 
-      - name: List working directory
-        id: ls
-        run: ls -l
+      # - name: List working directory
+      #   id: ls
+      #   run: ls -l
 
-      - name: List parent working directory
-        id: ls2
-        run: ls -l ..
+      # - name: List parent working directory
+      #   id: ls2
+      #   run: ls -l ..
 
       - name: Build and push
         id: docker_build
