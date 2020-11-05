@@ -24,12 +24,12 @@ jobs:
         run: pwd
 
       - name: List working directory
-        id: ll
-        run: ll
+        id: ls
+        run: ls -l
 
       - name: List parent working directory
-        id: ll2
-        run: ll ..
+        id: ls2
+        run: ls -l ..
 
       - name: Build and push
         id: docker_build
